@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main(){
+    // Integer input
+    int intInput;
+    printf("Enter an integer - ");
+    scanf("%d",&intInput);
+    
+    // String input
+    char strInput[50];
+    printf("Enter a string - ");
+    scanf("%s",strInput);
+    
+    // Sentence input
+    char sentInput[100];
+    printf("Enter a sentence - ");
+    scanf(" %[^\n]",sentInput);
+    
+    // Print inputs
+    printf("\nInteger: %d\n", intInput);
+    printf("String: %s\n", strInput);
+    printf("Sentence: %s\n", sentInput);
+
+    return 0;
+}
